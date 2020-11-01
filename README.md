@@ -1,4 +1,4 @@
-##Visit the sit here [https://vigilant-hawking-3c8980.netlify.app/](https://vigilant-hawking-3c8980.netlify.app/)
+## Visit the site here [https://vigilant-hawking-3c8980.netlify.app/](https://vigilant-hawking-3c8980.netlify.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
