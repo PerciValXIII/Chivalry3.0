@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7d0766d1.chunk.css",
+    "main.js": "/static/js/main.a7f6d725.chunk.js",
+    "main.js.map": "/static/js/main.a7f6d725.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.433a3f71.js",
+    "runtime-main.js.map": "/static/js/runtime-main.433a3f71.js.map",
+    "static/js/2.fed63959.chunk.js": "/static/js/2.fed63959.chunk.js",
+    "static/js/2.fed63959.chunk.js.map": "/static/js/2.fed63959.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f9c09321d1e4891741bd1a95f02ec891.js": "/precache-manifest.f9c09321d1e4891741bd1a95f02ec891.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.7d0766d1.chunk.css.map": "/static/css/main.7d0766d1.chunk.css.map",
+    "static/js/2.fed63959.chunk.js.LICENSE.txt": "/static/js/2.fed63959.chunk.js.LICENSE.txt",
+    "static/media/1.jpg": "/static/media/1.35c4dc60.jpg",
+    "static/media/2.jpg": "/static/media/2.32936431.jpg",
+    "static/media/3.jpg": "/static/media/3.51e6d51f.jpg",
+    "static/media/4.jpg": "/static/media/4.87992a33.jpg",
+    "static/media/5.jpg": "/static/media/5.bfdeb040.jpg",
+    "static/media/alexandre-trouve-LP3HsuFxMxM-unsplash.jpg": "/static/media/alexandre-trouve-LP3HsuFxMxM-unsplash.1ac5eb0c.jpg",
+    "static/media/austin-wade-lNy-Yi0U-3o-unsplash.jpg": "/static/media/austin-wade-lNy-Yi0U-3o-unsplash.5374e24c.jpg",
+    "static/media/ilya-gorborukov-syx5GyrkeZ8-unsplash.jpg": "/static/media/ilya-gorborukov-syx5GyrkeZ8-unsplash.06534918.jpg",
+    "static/media/image2.png": "/static/media/image2.92c84e1d.png",
+    "static/media/image3.png": "/static/media/image3.ded1a9c6.png",
+    "static/media/products.module.css": "/static/media/nordwood-themes-Nv4QHkTVEaI-unsplash.69d81860.jpg",
+    "static/media/pedram-normohamadian-w-93ar9an2Q-unsplash.jpg": "/static/media/pedram-normohamadian-w-93ar9an2Q-unsplash.2792421c.jpg",
+    "static/media/sorin-sirbu-ifYt0sKdJYk-unsplash.jpg": "/static/media/sorin-sirbu-ifYt0sKdJYk-unsplash.0e86a5b7.jpg",
+    "static/media/svg-3.svg": "/static/media/svg-3.7e36cd7e.svg",
+    "static/media/svg-4.svg": "/static/media/svg-4.61e69671.svg",
+    "static/media/svg-6.svg": "/static/media/svg-6.1f7f8501.svg",
+    "static/media/video.mp4": "/static/media/video.f7fef37f.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.433a3f71.js",
+    "static/js/2.fed63959.chunk.js",
+    "static/css/main.7d0766d1.chunk.css",
+    "static/js/main.a7f6d725.chunk.js"
+  ]
+}
