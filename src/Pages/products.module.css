@@ -1,0 +1,541 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* LAYOUT */
+.container {
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.topbar {
+    position: relative;
+    height: 126px;
+}
+
+.promotionbar {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    font-size: .9rem;
+    width: 100%;
+    padding: .5rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    width: 100%;
+    top: 33px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 1.8rem;
+    height: 5px;
+    background-color: #fff;
+    margin: 4px;
+}
+
+.sidebarmodalcontent {
+    width: 40%;
+    height: 100%;
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in;
+    position: fixed;
+}
+
+.active {
+    transform: translateX(0%);
+}
+
+.sidebarmodalcontent a {
+    color: #FFF;
+    text-decoration: none;
+    margin: .3rem 0;
+}
+
+.sidebarmodalcontent ul {
+    list-style: none;
+    margin: 0 0 2rem 0;
+    padding: 0;
+}
+
+.sidebarmodalcontent li {
+    padding: 1rem 0;
+    border-bottom: 1px solid #333;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.header {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.nav {
+    width: 60%;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+.nav a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:#e6c270;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account i {
+    font-size: 1.3rem;
+    margin: .7rem;
+}
+
+.hero {
+    height: 630px;
+    background-color: #EEE;
+    background: url("./images/Garments/nordwood-themes-Nv4QHkTVEaI-unsplash.jpg");
+    background-size: cover;
+    margin-top: 120px;
+
+    :before{
+        content: '';
+        position: absolute;
+        background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,50,0,0) 60%), 
+        linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
+        z-index: 10;
+}}
+
+.sponsors {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 2em;
+}
+
+.sponsors img {
+    width: 75px;
+    margin: 0 2rem;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.featuredproducts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3em;
+}
+
+.featuredproducts h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .5em;
+    font-size: 1.5rem;
+}
+
+.cardwrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.card {
+    margin: 1em;
+    text-align: center;
+    width: 50%;
+}
+
+.cardimg {
+    width: 100%;
+    transition: transform .2s;
+    z-index: -100;
+}
+
+.cardimg:hover, .jeansimg:hover {
+    transform: scale(1.02);
+}
+
+.cardtitle {
+    letter-spacing: .1rem;
+    margin-bottom: 1em;
+    font-size: 1rem;
+}
+
+.cardprice {
+    display: inline;
+}
+
+.cardbutton {
+    display: inline;
+    border-radius: 50px;
+    background: #e6c270;
+    white-space: nowrap;
+    padding: 10px 30px;
+    color: #010606;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    
+}
+
+.cardbutton:hover {
+    background-color: rgb(230, 230, 236);
+    color: rgb(3, 3, 3);
+}
+
+.jeanswrapper {
+    width: 100%;
+    padding: 0 5em 3em 5em;
+    display: flex;
+    margin-bottom: 4em;
+}
+
+.jeansheader {
+    font-size: 2rem;
+}
+
+.jeanstext {
+    margin: 0 2em;
+    position: relative;
+    line-height: 2.3rem;
+}
+
+.jeansimg {
+    width: 50%;
+    align-self: center;
+    transition: transform .2s;
+}
+
+.jeansbutton {
+    position: absolute;
+    left: 25%;
+    top: auto;
+    border-radius: 50px;
+    background: #e6c270;
+    white-space: nowrap;
+    padding: 14px 48px;
+    color: #010606;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: all 0.2s ease-in-out;
+    
+    font-family: 'Jost', sans-serif;
+    letter-spacing: .2rem;
+    box-shadow: 2px 2px #000;
+    outline: none;
+}
+
+.jeansreadmore {
+    display: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.instagramwrapper {
+    width: 100%;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+.instagramphotos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: scroll;
+}
+
+.instagramphotos img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 1em;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: 0 1em 0.2em 1em;
+}
+
+.footerwrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerlist {
+    display: flex;
+}
+
+.footerlist ul > li:first-child {
+    font-weight: 600;
+}
+
+.footerlist a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footerlist a:hover {
+    border-bottom: 1px solid #000;
+}
+
+.footerlist ul {
+    list-style: none;
+    margin: 0 3em;
+    padding: 0;
+}
+
+.footerlist ul li {
+    margin: 1em 0;
+}
+
+.signup {
+    font-size: 1.2rem;
+    width: 30%;
+}
+
+.signupinput {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #333;
+    height: 35px;
+    outline: none;
+    font-size: .8em;
+    font-family: 'Jost', sans-serif;
+    padding-bottom: .5em;
+}
+
+.signupform {
+    position: relative;
+    display: flex;
+    margin: 0 1em 1em 0;
+}
+
+.signupbutton {
+    position: absolute;
+    right: 0;
+    border: 0;
+    background-color: #FFF;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.signupicons {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .jeans {
+        display: flex;
+        justify-content: center;
+    }
+
+    .jeansimg {
+        width: 100%;
+    }
+    
+    .jeanstext {
+        text-align: center;
+    }
+
+    .jeansheader {
+        font-size: 1.9rem;
+    }
+    
+    .jeanswrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .jeansreadmore {
+        display: block;
+    }
+
+    .jeansextratext {
+        display: none;
+    }
+
+    .jeansbutton {
+        letter-spacing: .1rem;
+        padding: .5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .promotionbar, .navbar {
+        position: static;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .burger {
+        display: block;
+        width: 1.8rem;
+    }
+
+    .account {
+        width: 1.8rem;
+    }
+    
+    .account i:first-child {
+        display: none;
+    }
+
+    .hero {
+        height: 400px;
+        margin: 0;
+    }
+
+    .sponsors {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sponsors img {
+        width: 50px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .footerlist {
+        display: none;
+    }
+
+    .signup {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .promotionbar, .navbar {
+        position: static;
+    }
+
+    .sidebarmodalcontent {
+        width: 80%;
+    }
+
+    .hero {
+        height: 250px;
+        margin: 0;
+    }
+
+    .header {
+        font-size: 2rem;
+    }
+
+    .burger div {
+        width: 1.3rem;
+        height: 3px;
+        background-color: #000;
+        margin: 4px;
+    }
+
+    .sponsors img {
+        width: 40px;
+        margin: 0 1rem;
+    }
+
+    .navbar {
+        padding: .5em;
+    }
+
+    .featuredproducts h2 {
+        font-size: 1.3rem;
+        letter-spacing: .3em;
+    }
+
+    .cardwrapper {
+        display: block;
+    }
+
+    .card {
+        width: 100%;
+        margin: 1em 0;
+    }
+    
+    .jeanswrapper {
+        padding: 0 0 3em 0;
+    }
+}
