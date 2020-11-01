@@ -17,7 +17,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Description 
 The project is a hybrid example where both react Styled components and react css modules have been used extensively.
 
-The home page lets you navigate throught he page and learn about the services that this e-commerce fashion store provides. 
+The home page lets you navigate throught the page and learn about the services that this e-commerce fashion store provides. 
 
 The navbar links have been linked to each section of the page on clicking which the user is smooth scrolled to that particular section.
 
