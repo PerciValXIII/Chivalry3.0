@@ -96,9 +96,8 @@ const products = () => {
                     <h2 className={styles.jeansheader} >You take control of the your Suits.</h2>
                     <p>It all started in 1981 when the Marciano brothers designed a pair of stonewashed, slimcut jeans. Since then, GUESS has continued to create iconic women’s denim that sets the trends across the industry. Whether they are lowrise or highwaisted, you’ll turn heads in our sculpting women's jeans with a secondskin fit that hugs your every curve.</p>
                     <div className={styles.jeansextratext}>
-                        <p>Explore women’s jeans in classic skinny jeans, bestselling Sexy Curve and ontrend flared cuts with a selection of light wash jeans, dark wash jeans and straight jeans. Find everything from distressed details to trendright cropped hems, perfect for warmer weather. Look for modern takes on retro styles like highrise bootcut jeans in an ultraflattering slim fit.</p>
-                        <p>Denim doesn’t just stop at jeans. Pair denim jackets for women with cutoff shorts for a laidback look. Dress for a night out in a blue denim jumpsuit or an embellished jean mini skirt. Take your look daytonight in a jean jacket with zipfront designs, button details and faded finishes.</p>
-                    </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut aliquam purus sit amet luctus venenatis lectus magna fringilla.</p> 
                     <p className={styles.jeansreadmore}>Read more...</p>
                     <button className={styles.jeansbutton}>Shop More Suits</button>
                 </div>
